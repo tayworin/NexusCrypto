@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en" class="dark-theme">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Lend | Next-Gen Crypto Lending Platform</title>
+    <meta name="description" content="Nexus Lend offers institutional-grade crypto lending with competitive APY rates. Secure, transparent, and built for the future of finance.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+</head>
+<body>
+    <div class="background-elements">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+        <div class="grid-overlay"></div>
+    </div>
+
+    <nav class="navbar glassmorphism">
+        <div class="container">
+            <a href="#" class="logo">
+                <span class="logo-icon">🚀</span>
+                <span class="logo-text">Nexus<span class="logo-accent">Lend</span></span>
+            </a>
+            
+            <div class="nav-menu">
+                <a href="#benefits" class="nav-link">Benefits</a>
+                <a href="#how-it-works" class="nav-link">How It Works</a>
+                <a href="#calculator" class="nav-link">Calculator</a>
+                <a href="#cryptocurrencies" class="nav-link">Cryptocurrencies</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+                <button class="btn btn-secondary">Launch App</button>
+
+            </div>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero" id="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        <span class="title-line">Institutional-Grade</span>
+                        <span class="title-line">Crypto Lending</span>
+                        <span class="title-line gradient-text">Earn Up To 18% APY</span>
+                    </h1>
+                    
+                    <p class="hero-subtitle">
+                        Secure, transparent lending platform built for the future of decentralized finance.
+                        Institutional security meets DeFi innovation.
+                    </p>
+                    
+                    <div class="hero-cta">
+                        <button class="btn btn-primary btn-lg">Start Earning Now</button>
+                        <button class="btn btn-outline btn-lg">Explore Features</button>
+                    </div>
+                </div>
+                
+                <div class="hero-stats glassmorphism">
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-value" data-target="42.5">0</div>
+                            <div class="stat-label">Total Value Locked (B)</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value" data-target="125000">0</div>
+                            <div class="stat-label">Active Users</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value" data-target="18.2">0</div>
+                            <div class="stat-label">Avg. APY (%)</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value" data-target="99.9">0</div>
+                            <div class="stat-label">Uptime (%)</div>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-chart">
+                        <canvas id="heroChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits" id="benefits">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Why Choose NexusLend</h2>
+                    <p class="section-subtitle">Institutional-grade security meets DeFi innovation</p>
+                </div>
+                
+                <div class="benefits-grid">
+                    <div class="benefit-card glassmorphism">
+                        <div class="benefit-icon">⚡</div>
+                        <h3 class="benefit-title">High APY Returns</h3>
+                        <p class="benefit-description">Earn up to 18% APY on your crypto assets with our optimized yield strategies.</p>
+                    </div>
+                    
+                    <div class="benefit-card glassmorphism">
+                        <div class="benefit-icon">🔒</div>
+                        <h3 class="benefit-title">Bank-Level Security</h3>
+                        <p class="benefit-description">Multi-sig wallets, cold storage, and smart contract audits ensure your assets are safe.</p>
+                    </div>
+                    
+                    <div class="benefit-card glassmorphism">
+                        <div class="benefit-icon">🚀</div>
+                        <h3 class="benefit-title">Instant Liquidity</h3>
+                        <p class="benefit-description">Withdraw your funds anytime with no lock-up periods or hidden fees.</p>
+                    </div>
+                    
+                    <div class="benefit-card glassmorphism">
+                        <div class="benefit-icon">📊</div>
+                        <h3 class="benefit-title">Real-Time Analytics</h3>
+                        <p class="benefit-description">Advanced dashboards with real-time performance tracking and reporting.</p>
+                    </div>
+                    
+                    <div class="benefit-card glassmorphism">
+                        <div class="benefit-icon">🌐</div>
+                        <h3 class="benefit-title">Cross-Chain Support</h3>
+                        <p class="benefit-description">Support for 10+ blockchains including Ethereum, Solana, and Polygon.</p>
+                    </div>
+                    
+                    <div class="benefit-card glassmorphism">
+                        <div class="benefit-icon">💎</div>
+                        <h3 class="benefit-title">Premium Features</h3>
+                        <p class="benefit-description">Access to exclusive features like automated portfolio rebalancing.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="how-it-works" id="how-it-works">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">How It Works</h2>
+                    <p class="section-subtitle">Start earning in three simple steps</p>
+                </div>
+                
+                <div class="steps">
+                    <div class="step-card glassmorphism">
+                        <div class="step-number">01</div>
+                        <div class="step-icon">💰</div>
+                        <h3 class="step-title">Deposit Assets</h3>
+                        <p class="step-description">Deposit your cryptocurrency into our secure, non-custodial wallets</p>
+                    </div>
+                    
+                    <div class="step-card glassmorphism">
+                        <div class="step-number">02</div>
+                        <div class="step-icon">📊</div>
+                        <h3 class="step-title">Select Strategy</h3>
+                        <p class="step-description">Choose from automated yield strategies or customize your own</p>
+                    </div>
+                    
+                    <div class="step-card glassmorphism">
+                        <div class="step-number">03</div>
+                        <div class="step-icon">🚀</div>
+                        <h3 class="step-title">Earn Yield</h3>
+                        <p class="step-description">Start earning competitive APY with real-time tracking and reporting</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="calculator" id="calculator">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">APY Calculator</h2>
+                    <p class="section-subtitle">Calculate your potential earnings</p>
+                </div>
+                
+                <div class="calculator-wrapper glassmorphism">
+                    <div class="calculator-inputs">
+                        <div class="input-group">
+                            <label for="depositAmount">Deposit Amount ($)</label>
+                            <input type="range" id="depositAmount" min="1000" max="1000000" value="50000" step="1000">
+                            <div class="input-value">
+                                <span id="depositValue">50,000</span> USD
+                            </div>
+                        </div>
+                        
+                        <div class="input-group">
+                            <label for="apyRate">APY Rate (%)</label>
+                            <input type="range" id="apyRate" min="1" max="25" value="12.5" step="0.1">
+                            <div class="input-value">
+                                <span id="apyValue">12.5</span>%
+                            </div>
+                        </div>
+                        
+                        <div class="input-group">
+                            <label for="timePeriod">Time Period (Months)</label>
+                            <input type="range" id="timePeriod" min="1" max="36" value="12" step="1">
+                            <div class="input-value">
+                                <span id="timeValue">12</span> months
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="calculator-results">
+                        <div class="result-card glassmorphism">
+                            <div class="result-label">Total Earnings</div>
+                            <div class="result-value" id="totalEarnings">$6,250</div>
+                        </div>
+                        
+                        <div class="result-card glassmorphism">
+                            <div class="result-label">Final Balance</div>
+                            <div class="result-value" id="finalBalance">$56,250</div>
+                        </div>
+                        
+                        <div class="result-card glassmorphism">
+                            <div class="result-label">Monthly Yield</div>
+                            <div class="result-value" id="monthlyYield">$521</div>
+                        </div>
+                    </div>
+                    
+                    <div class="calculator-chart">
+                        <canvas id="calculatorChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cryptocurrencies" id="cryptocurrencies">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Supported Cryptocurrencies</h2>
+                    <p class="section-subtitle">Trade and earn with 50+ leading digital assets</p>
+                </div>
+                
+                <div class="crypto-grid">
+                    <div class="crypto-card glassmorphism">
+                        <div class="crypto-icon">₿</div>
+                        <div class="crypto-symbol">BTC</div>
+                        <div class="crypto-name">Bitcoin</div>
+                        <div class="crypto-price">$64,250</div>
+                        <div class="crypto-change positive">+2.4%</div>
+                    </div>
+                    
+                    <div class="crypto-card glassmorphism">
+                        <div class="crypto-icon">Ξ</div>
+                        <div class="crypto-symbol">ETH</div>
+                        <div class="crypto-name">Ethereum</div>
+                        <div class="crypto-price">$3,450</div>
+                        <div class="crypto-change positive">+1.8%</div>
+                    </div>
+                    
+                    <div class="crypto-card glassmorphism">
+                        <div class="crypto-icon">◎</div>
+                        <div class="crypto-symbol">SOL</div>
+                        <div class="crypto-name">Solana</div>
+                        <div class="crypto-price">$145</div>
+                        <div class="crypto-change positive">+5.2%</div>
+                    </div>
+                    
+                    <div class="crypto-card glassmorphism">
+                        <div class="crypto-icon">ⓑ</div>
+                        <div class="crypto-symbol">BNB</div>
+                        <div class="crypto-name">Binance Coin</div>
+                        <div class="crypto-price">$580</div>
+                        <div class="crypto-change positive">+0.9%</div>
+                    </div>
+                    
+                    <div class="crypto-card glassmorphism">
+                        <div class="crypto-icon">₳</div>
+                        <div class="crypto-symbol">ADA</div>
+                        <div class="crypto-name">Cardano</div>
+                        <div class="crypto-price">$0.48</div>
+                        <div class="crypto-change positive">+1.2%</div>
+                    </div>
+                    
+                    <div class="crypto-card glassmorphism">
+                        <div class="crypto-icon">●</div>
+                        <div class="crypto-symbol">DOT</div>
+                        <div class="crypto-name">Polkadot</div>
+                        <div class="crypto-price">$7.20</div>
+                        <div class="crypto-change negative">-0.3%</div>
+                    </div>
+                    
+                    <div class="crypto-card glassmorphism">
+                        <div class="crypto-icon">⛰️</div>
+                        <div class="crypto-symbol">AVAX</div>
+                        <div class="crypto-name">Avalanche</div>
+                        <div class="crypto-price">$36.50</div>
+                        <div class="crypto-change positive">+3.1%</div>
+                    </div>
+                    
+                    <div class="crypto-card glassmorphism">
+                        <div class="crypto-icon">⬡</div>
+                        <div class="crypto-symbol">MATIC</div>
+                        <div class="crypto-name">Polygon</div>
+                        <div class="crypto-price">$0.85</div>
+                        <div class="crypto-change positive">+2.1%</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="security" id="security">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Enterprise-Grade Security</h2>
+                    <p class="section-subtitle">Your assets are protected with institutional security measures</p>
+                </div>
+                
+                <div class="security-features">
+                    <div class="security-card glassmorphism">
+                        <div class="security-icon">🔒</div>
+                        <h3>Multi-Sig Wallets</h3>
+                        <p>Funds secured with multi-signature technology requiring multiple approvals</p>
+                    </div>
+                    
+                    <div class="security-card glassmorphism">
+                        <div class="security-icon">🛡️</div>
+                        <h3>Cold Storage</h3>
+                        <p>95% of assets stored in offline, geographically distributed cold wallets</p>
+                    </div>
+                    
+                    <div class="security-card glassmorphism">
+                        <div class="security-icon">📜</div>
+                        <h3>Smart Contract Audits</h3>
+                        <p>Regular audits by leading security firms including CertiK and Quantstamp</p>
+                    </div>
+                    
+                    <div class="security-card glassmorphism">
+                        <div class="security-icon">⚡</div>
+                        <h3>Real-Time Monitoring</h3>
+                        <p>24/7 surveillance and automated threat detection systems</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials" id="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Trusted By Thousands</h2>
+                    <p class="section-subtitle">See what our users say about their experience</p>
+                </div>
+                
+                <div class="testimonial-carousel">
+                    <div class="testimonial-track">
+                        <div class="testimonial-card glassmorphism">
+                            <div class="testimonial-content">
+                                <p class="testimonial-text">"NexusLend transformed my crypto portfolio. The 18% APY is real and consistent. Security features give me peace of mind."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">AC</div>
+                                <div class="author-info">
+                                    <h4>Alex Chen</h4>
+                                    <p>Crypto Investor</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-card glassmorphism">
+                            <div class="testimonial-content">
+                                <p class="testimonial-text">"The user interface is incredible. Real-time analytics helped me optimize my yields. Best lending platform out there!"</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">SJ</div>
+                                <div class="author-info">
+                                    <h4>Sarah Johnson</h4>
+                                    <p>DeFi Enthusiast</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-card glassmorphism">
+                            <div class="testimonial-content">
+                                <p class="testimonial-text">"Enterprise-grade security with DeFi yields. Perfect for serious investors. The team is professional and responsive."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">MR</div>
+                                <div class="author-info">
+                                    <h4>Marcus Rivera</h4>
+                                    <p>Institutional Trader</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-card glassmorphism">
+                            <div class="testimonial-content">
+                                <p class="testimonial-text">"I recommend NexusLend to all my clients. Transparent fees, excellent support, and impressive returns."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">ER</div>
+                                <div class="author-info">
+                                    <h4>Elena Rodriguez</h4>
+                                    <p>Crypto Advisor</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+        <section class="pricing" id="pricing">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Choose Your Plan</h2>
+                    <p class="section-subtitle">Flexible pricing for every level of investor</p>
+                </div>
+                
+                <div class="pricing-plans">
+                    <div class="pricing-card glassmorphism">
+                        <div class="pricing-header">
+                            <h3 class="pricing-name">Starter</h3>
+                            <div class="pricing-price">$0</div>
+                            <div class="pricing-period">Free Forever</div>
+                        </div>
+                        
+                        <div class="pricing-features">
+                            <div class="pricing-feature included">
+                                <span>✓</span> Up to $10,000 TVL
+                            </div>
+                            <div class="pricing-feature included">
+                                <span>✓</span> Basic Analytics
+                            </div>
+                            <div class="pricing-feature included">
+                                <span>✓</span> Email Support
+                            </div>
+                            <div class="pricing-feature excluded">
+                                <span>✗</span> Automated Strategies
+                            </div>
+                            <div class="pricing-feature excluded">
+                                <span>✗</span> Priority Support
+                            </div>
+                            <div class="pricing-feature excluded">
+                                <span>✗</span> Advanced API
+                            </div>
+                        </div>
+                        
+                        <button class="btn btn-outline btn-block">Get Started</button>
+                    </div>
+                    
+                    <div class="pricing-card glassmorphism featured">
+                        <div class="pricing-header">
+                            <h3 class="pricing-name">Pro</h3>
+                            <div class="pricing-price">$99</div>
+                            <div class="pricing-period">Per Month</div>
+                        </div>
+                        
+                        <div class="pricing-features">
+                            <div class="pricing-feature included">
+                                <span>✓</span> Up to $100,000 TVL
+                            </div>
+                            <div class="pricing-feature included">
+                                <span>✓</span> Advanced Analytics
+                            </div>
+                            <div class="pricing-feature included">
+                                <span>✓</span> Priority Support
+                            </div>
+                            <div class="pricing-feature included">
+                                <span>✓</span> Automated Strategies
+                            </div>
+                            <div class="pricing-feature excluded">
+                                <span>✗</span> Custom Portfolio
+                            </div>
+                            <div class="pricing-feature excluded">
+                                <span>✗</span> Advanced API
+                            </div>
+                        </div>
+                        
+                        <button class="btn btn-primary btn-block">Go Pro</button>
+                    </div>
+                    
+                    <div class="pricing-card glassmorphism">
+                        <div class="pricing-header">
+                            <h3 class="pricing-name">Institutional</h3>
+                            <div class="pricing-price">$499</div>
+                            <div class="pricing-period">Per Month</div>
+                        </div>
+                        
+                        <div class="pricing-features">
+                            <div class="pricing-feature included">
+                                <span>✓</span> Unlimited TVL
+                            </div>
+                            <div class="pricing-feature included">
+                                <span>✓</span> Enterprise Analytics
+                            </div>
+                            <div class="pricing-feature included">
+                                <span>✓</span> 24/7 Dedicated Support
+                            </div>
+                            <div class="pricing-feature included">
+                                <span>✓</span> Custom Strategies
+                            </div>
+                            <div class="pricing-feature included">
+                                <span>✓</span> White-label Solutions
+                            </div>
+                            <div class="pricing-feature included">
+                                <span>✓</span> Advanced API
+                            </div>
+                        </div>
+                        
+                        <button class="btn btn-outline btn-block">Contact Sales</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq" id="faq">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p class="section-subtitle">Get answers to common questions</p>
+                </div>
+                
+                <div class="faq-list">
+                    <div class="faq-item glassmorphism">
+                        <button class="faq-question">
+                            <span>How does NexusLend generate yield?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                <p>We use a combination of DeFi protocols including lending, staking, and liquidity provision across multiple blockchains. Our algorithms automatically optimize for the highest risk-adjusted returns.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item glassmorphism">
+                        <button class="faq-question">
+                            <span>Is my crypto safe with NexusLend?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                <p>Yes. We use multi-signature wallets, 95% cold storage, regular smart contract audits, and insurance coverage. Your private keys are never exposed to our systems.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item glassmorphism">
+                        <button class="faq-question">
+                            <span>What are the fees?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                <p>We charge a 10% performance fee on earnings only. There are no deposit or withdrawal fees. Premium plans have additional features at fixed monthly rates.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item glassmorphism">
+                        <button class="faq-question">
+                            <span>Can I withdraw my funds anytime?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                <p>Yes. We have no lock-up periods. Withdrawals are processed within minutes, subject to blockchain confirmation times.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item glassmorphism">
+                        <button class="faq-question">
+                            <span>Which cryptocurrencies are supported?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                <p>We support 50+ major cryptocurrencies including Bitcoin, Ethereum, Solana, and stablecoins. New assets are added regularly based on community demand.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item glassmorphism">
+                        <button class="faq-question">
+                            <span>Do you have insurance?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                <p>Yes. We have $100M insurance coverage through leading crypto insurance providers, covering both custodial and smart contract risks.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta" id="cta">
+            <div class="container">
+                <div class="cta-content glassmorphism">
+                    <h2 class="cta-title">Ready to Start Earning?</h2>
+                    <p class="cta-subtitle">Join thousands of investors earning passive income with NexusLend</p>
+                    
+                    <form class="registration-form" id="registrationForm">
+                        <div class="form-group">
+                            <input type="email" placeholder="Enter your email" required>
+                            <button type="submit" class="btn btn-primary">Get Started</button>
+                        </div>
+                        <p class="form-note">By registering, you agree to our Terms of Service and Privacy Policy</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">🚀</span>
+                        <span class="logo-text">Nexus<span class="logo-accent">Lend</span></span>
+                    </a>
+                    <p class="footer-description">
+                        Next-generation crypto lending platform built for institutional and retail investors.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Platform</h4>
+                        <a href="#">Lending</a>
+                        <a href="#">Borrowing</a>
+                        <a href="#">Staking</a>
+                        <a href="#">Liquidity</a>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Resources</h4>
+                        <a href="#">Documentation</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Security</a>
+                        <a href="#">Support</a>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Company</h4>
+                        <a href="#">About</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Press</a>
+                        <a href="#">Contact</a>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Legal</h4>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Cookie Policy</a>
+                        <a href="#">Risk Disclosure</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 NexusLend. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">Twitter</a>
+                    <a href="#" class="social-link">Discord</a>
+                    <a href="#" class="social-link">Telegram</a>
+                    <a href="#" class="social-link">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>
